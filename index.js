@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 
 });
 
-app.post('/', function (req, res) {
+app.post('/emir', function (req, res) {
  // res.send('Merhaba Express');
   res.sendFile( __dirname + "/" + "earth.html");
 });
