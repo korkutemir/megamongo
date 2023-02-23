@@ -1,1 +1,1 @@
-web: gunicorn delek2:app
+web: node index.js
