@@ -10,7 +10,7 @@ var app = express();
 
 //app.use(express.static(`${__dirname}`));
 //app.use("/static", express.static(__dirname + "/nodejs"));
-app.use(express.static(path.join(__dirname, "assets")));
+app.use(express.static(path.join(__dirname, "/")));
 app.use(express.json());
 
 app.use(express.urlencoded({ extended: false }));
