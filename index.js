@@ -76,6 +76,11 @@ MongoClient.connect(URL, (err, client) => {
   db.collection('contact').insertMany(veriler_3, (err, result) => {
     if (err) throw err;
     console.log(result.insertedCount + ' kayıt eklendi.');
+     res.json({ 
+    anObject: { item1: "item1val", item2: "item2val" }, 
+    anArray: ["item1", "item2"], 
+    another: "item"
+  });
    // client.close();
   });
 
